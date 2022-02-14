@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+
+@font-face {
+    font-family: 'Spicy';
+    src: url('./font/spicy.ttf');
+}
+
+* {
+	font-family: 'Spicy', cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+canvas {
+	background-color: transparent;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+html {
+	overflow: auto;
+	background-color: rgba(0, 48, 48, 1.0);
+	background-image: radial-gradient(circle, rgba(0, 96, 96, 1.0), rgba(0, 0, 0, 0.5));
+	width: 100%;
+	height: 100%;
+    font-size: 16px;
+}
+html, body {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	font-size: 4rem;
+	color: white;
+	text-shadow: 0px 5px 8px  #D60072;
+	justify-content: center;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 10;
+    letter-spacing: 1rem;
+    font-weight: 500;
+}
+
+h1 {
+	color: #D60072;
+	font-size: 4.5rem;
+	text-shadow: 0px 5px 8px white;
+	justify-content: center;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 10;
+    letter-spacing: 1rem;
+}
+
+.highlighted {
+    color: #D60072;
+    text-shadow: 0px 5px 8px white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.image {
+    max-width: 180px;
+    height: auto;
+}
+ .image img {
+     margin: 20px 0;
+     width: 100%;
+     border-radius: 50%;
+     box-shadow: 0 0 10px #D60072;
+ }
+
+ @media (max-width: 400px) {
+     html {
+         font-size: 8px;
+     }
+ }
+ @media (max-width: 900px) {
+     html {
+         font-size: 8px;
+     }
+     .content {
+         flex-direction: column;
+     }
+ }
