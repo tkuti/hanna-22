@@ -39,7 +39,7 @@ html, body {
 h2 {
 	font-size: 4rem;
 	color: white;
-	text-shadow: 0px 5px 8px  #D60072;
+	text-shadow: 0px 0px 8px #D60072, 2px 2px 6px  #D60072;
 	justify-content: center;
 	vertical-align: middle;
 	text-align: center;
@@ -51,7 +51,7 @@ h2 {
 h1 {
 	color: #D60072;
 	font-size: 4.5rem;
-	text-shadow: 0px 5px 8px white;
+	text-shadow: 0px 0px 8px white, 2px 2px 4px  white;
 	justify-content: center;
 	font-weight: bold;
 	vertical-align: middle;
@@ -62,7 +62,7 @@ h1 {
 
 .highlighted {
     color: #D60072;
-    text-shadow: 0px 5px 8px white;
+    text-shadow:0px 0px 8px white, 2px 2px 4px  white;
 }
 
 .content {
@@ -81,7 +81,7 @@ h1 {
      margin: 20px 0;
      width: 100%;
      border-radius: 50%;
-     box-shadow: 0 0 10px #D60072;
+     box-shadow:  0px 0px 8px #D60072, 2px 2px 6px  white;
  }
 
  @media (max-width: 400px) {
@@ -96,4 +96,11 @@ h1 {
      .content {
          flex-direction: column;
      }
+ }
+
+ @media (min-width: 900px) {
+	.image {
+		max-width: 360px;
+		height: auto;
+	}
  }
